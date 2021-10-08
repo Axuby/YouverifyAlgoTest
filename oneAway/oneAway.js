@@ -1,4 +1,4 @@
-const areOneAway = (left, right) => {
+const OneAway = (left, right) => {
   if (Math.abs(left.length - right.length) > 1) return false;
   let difference = 0;
   let indexLeft = 0;
@@ -16,3 +16,6 @@ const areOneAway = (left, right) => {
   }
   return difference < 2;
 };
+
+
+module.exports = OneAway
